@@ -29,6 +29,12 @@ public class GetMinValue {
 		
 		//If you want only the value!
 		System.out.println("Min value : "+Collections.min(mapper.values()));
+		
+		//Simple 1 liner with Java 8
+		String minKey = Collections.min(mapper.entrySet(), Map.Entry.comparingByValue()).getKey();
+		String maxKey = Collections.max(mapper.entrySet(), Map.Entry.comparingByValue()).getKey();
+		System.out.println("Min Value: "+minKey);
+		System.out.println("Min Value: "+maxKey);
 	}
 
 }
