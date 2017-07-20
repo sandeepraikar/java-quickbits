@@ -27,7 +27,7 @@ public class SortMapOnValues {
 			public int compare(Entry<String, Double> o1,Entry<String, Double> o2) {
 				Double v1 = o1.getValue();
 				Double v2 = o2.getValue();
-				return v1.compareTo(v2);
+				return v2.compareTo(v1);
 			}			
 		};
 		Set<Entry<String,Double>> entries = map.entrySet();
